@@ -8,20 +8,21 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1963857078541744}
-  m_IsPrefabParent: 1
+  m_IsPrefabAsset: 1
 --- !u!1 &1963857078541744
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4073189499389180}
   - component: {fileID: 33508866923476812}
   - component: {fileID: 23900633661353282}
   - component: {fileID: 64383802360651250}
+  - component: {fileID: 65402478962425760}
   m_Layer: 0
   m_Name: AlienDestroyerGreen
   m_TagString: Untagged
@@ -32,7 +33,7 @@ GameObject:
 --- !u!4 &4073189499389180
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963857078541744}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
@@ -45,7 +46,7 @@ Transform:
 --- !u!23 &23900633661353282
 MeshRenderer:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963857078541744}
   m_Enabled: 1
@@ -55,6 +56,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 505d626f44c207345ad0ffa64d4cd0c8, type: 2}
   m_StaticBatchInfo:
@@ -79,14 +81,14 @@ MeshRenderer:
 --- !u!33 &33508866923476812
 MeshFilter:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963857078541744}
   m_Mesh: {fileID: 4300000, guid: 5c929a1e7e6053f499c799f0b76fc965, type: 3}
 --- !u!64 &64383802360651250
 MeshCollider:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963857078541744}
   m_Material: {fileID: 0}
@@ -97,3 +99,15 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 5c929a1e7e6053f499c799f0b76fc965, type: 3}
+--- !u!65 &65402478962425760
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1963857078541744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.0721316, y: 4.40429, z: 18.998772}
+  m_Center: {x: 0, y: 0.79953825, z: 1.4622607}
